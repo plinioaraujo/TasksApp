@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
 import { BrowserRouter as Router, Route} from "react-router-dom";
@@ -9,7 +9,6 @@ import AddTask from "./components/AddTask";
 import TaskDetails from "./components/TaskDetails";
 
 import './App.css'
-import { useEffect } from "react/cjs/react.development";
 
 const App = () => {
   const [tasks, setTasks ] = useState([]);
